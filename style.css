@@ -1,0 +1,101 @@
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: rgb(255, 249, 240);
+    background-image: url(https://img.freepik.com/vecteurs-premium/motif-sans-couture-aquarelle-pastel-coeurs-fond-blanc-design-mignon-pour-decor-scrapbooking_107335-1317.jpg?semt=ais_hybrid&w=740&q=80);
+    background-size: 200px;
+    background-image: 
+        linear-gradient(rgba(255, 249, 240, 0.8), rgba(255, 249, 240, 0.8)),
+}
+h1,h2,h3,p {font-family:'Courier New', Courier, monospace;}
+#avatar {
+   
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover; 
+    display: block;
+    margin: 20px auto; 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+border: 1px solid #000000;
+}
+.email {
+    color: #000000;
+    font-style: italic; 
+    font-weight: normal;
+    
+}
+.email {
+    font-weight: bold;
+}
+
+section:last-of-type { 
+    background-color: #ffffff; 
+    text-align: center;
+    max-width: 600px;      
+    margin: 40px auto;     
+    padding: 30px;         
+    border-radius: 15px;   
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+section:last-of-type h2 {
+    margin-top: 0;
+    color: #000000;
+    border-bottom: 2px solid #f0f0f0; 
+    padding-bottom: 10px;
+    display: inline-block; 
+}
+
+.card-info, section {
+    
+    text-align: center;     
+  color: #000000;  
+    max-width: 600px;        
+    margin: 20px auto;      
+    padding: 30px;          
+    border-radius: 15px;    
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); 
+    border: 2px solid #000000; 
+}
+.card-info h1 {
+    color: #000000
+}
+
+section:nth-of-type(1) {
+    background-color: #ffd1dc; 
+    border-color: #ffb7c5;    
+}
+
+section:nth-of-type(2) {
+    background-color: #d4edda; 
+    border-color: #c3e6cb;    
+}
+
+section:nth-of-type(3) {
+    background-color: #ffffff;
+}
+
+.card-info h1 {
+    margin-top: 0;
+    color: #b68fa9;
+    font-size: 1.8rem;
+}
+
+header {
+    text-align: center; 
+    margin-bottom: 30px; 
+}
+
+header h1 {
+    font-size: 1.2rem;       
+    color: #ce92b156;         
+    background-color: #fff;  
+    display: inline-block;   
+    padding: 5px 15px;       
+    border-radius: 5px;     
+    border-color: #b68fa9; 
+}
+button{margin: 10px;}
