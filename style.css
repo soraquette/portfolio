@@ -1,101 +1,159 @@
-a{
-    text-decoration: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: rgb(255, 249, 240);
-    background-image: url(https://img.freepik.com/vecteurs-premium/motif-sans-couture-aquarelle-pastel-coeurs-fond-blanc-design-mignon-pour-decor-scrapbooking_107335-1317.jpg?semt=ais_hybrid&w=740&q=80);
-    background-size: 200px;
-    background-image: 
-        linear-gradient(rgba(255, 249, 240, 0.8), rgba(255, 249, 240, 0.8)),
-}
-h1,h2,h3,p {font-family:'Courier New', Courier, monospace;}
-#avatar {
-   
-    width: 150px; 
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover; 
-    display: block;
-    margin: 20px auto; 
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-border: 1px solid #000000;
-}
-.email {
-    color: #000000;
-    font-style: italic; 
-    font-weight: normal;
-    
-}
-.email {
-    font-weight: bold;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-section:last-of-type { 
-    background-color: #ffffff; 
-    text-align: center;
-    max-width: 600px;      
-    margin: 40px auto;     
-    padding: 30px;         
-    border-radius: 15px;   
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+/* ---- PAGE ----
+   display: flex permet de centrer la carte.
+   Sans ça, justify-content et align-items ne fonctionnent pas.
+   justify-content centre sur l'axe horizontal.
+   align-items centre sur l'axe vertical. */
+body {
+  font-family: 'DM Sans', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://i.pinimg.com/736x/74/a6/5c/74a65c56d71352d8ef8b2901a1d1ca96.jpg');
+  background-size: 300px auto;
+
+/* ---- CARTE ----
+   Ajouter display flex pour que les blocs s'empilent verticalement. */
+.carte {
+  /* à compléter */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 380px;
+  padding: 30px;
+  background-color:white;
+  border-radius:20px; 
+  border: 1px solid rgb(33, 33, 33);
 }
 
-section:last-of-type h2 {
-    margin-top: 0;
-    color: #000000;
-    border-bottom: 2px solid #f0f0f0; 
-    padding-bottom: 10px;
-    display: inline-block; 
+
+/* ---- ENTETE ----
+   Ajouter display flex pour mettre la photo et le texte côte à côte. */
+.entete {
+  /* à compléter */
+    align-items: center;
+  display: flex;
+  background-color: 
+  gap: 10px;
+  width: 100%;
 }
 
-.card-info, section {
-    
-    text-align: center;     
-  color: #000000;  
-    max-width: 600px;        
-    margin: 20px auto;      
-    padding: 30px;          
-    border-radius: 15px;    
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); 
-    border: 2px solid #000000; 
-}
-.card-info h1 {
-    color: #000000
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgb(255, 255, 255);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, .2);
 }
 
-section:nth-of-type(1) {
-    background-color: #ffd1dc; 
-    border-color: #ffb7c5;    
+/* ---- ENTETE TEXTE ----
+   Ajouter display flex pour empiler le nom et la bio. */
+.entete-texte {
+  /* à compléter */
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 15px;
+
+  
 }
 
-section:nth-of-type(2) {
-    background-color: #d4edda; 
-    border-color: #c3e6cb;    
+.entete-texte h1 {
+   font-family: '', cursive;
+  font-size: 30px;
+  font-weight: 600;
+  color: ;
 }
 
-section:nth-of-type(3) {
-    background-color: #ffffff;
+.entete-texte p {
+  font-family: 'Dm mono', monospace;
+  font-size: 20px;
+  color: rgb(157, 54, 94);
 }
 
-.card-info h1 {
-    margin-top: 0;
-    color: #b68fa9;
-    font-size: 1.8rem;
+
+/* ---- SEPARATEUR ---- */
+.separateur {
+  width: 100%;
+  height: 0px;
+  background-color: ;
 }
 
-header {
-    text-align: center; 
-    margin-bottom: 30px; 
+
+/* ---- LISTE DE LIENS ----
+   Ajouter display flex pour empiler les boutons. */
+.liste-liens {
+  display: flex;
+  /* à compléter */
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  padding: 10px;
 }
 
-header h1 {
-    font-size: 1.2rem;       
-    color: #ce92b156;         
-    background-color: #fff;  
-    display: inline-block;   
-    padding: 5px 15px;       
-    border-radius: 5px;     
-    border-color: #b68fa9; 
+
+/* ---- LIEN ----
+   Ajouter display flex pour aligner icône, texte et flèche sur une ligne. */
+.lien {display: flex;
+  /* à compléter */
+  align-items: center;
+  gap: 0px;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  border: 1px solid #000000;
+  padding: 10px;
+  transition : background-color 0.3s ease;
 }
-button{margin: 10px;}
+.lien:hover{
+  background-color: rgb(190, 148, 163);
+  box-shadow: ;
+}
+
+
+.lien-icone {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  font-size: 20px;
+  width: 32px;
+}
+
+/* ---- LIEN TEXTE ----
+   Ajouter display flex pour empiler le titre et l'url. */
+.lien-texte {
+  /* à compléter */
+  flex-direction: column;
+  gap: 2px;
+  width: 100%;
+  display: flex ;
+}
+
+.lien-texte span {
+  font-size: 14px;
+  font-weight: 500;
+  color: 
+}
+
+.lien-texte small {
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  color:;
+}
+
+.lien-fleche {
+  color: white;
+
+}
